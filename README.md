@@ -39,14 +39,34 @@ yarn install
 
 3. Start the backend server:
 ```bash
-cd backend
-# Additional setup instructions to be added
-```
+# Navigate to the backend directory
+cd "WORKCOHOL PROJECT/backend"
+
+# Create a Python virtual environment (recommended)
+python -m venv venv
+
+# Activate the virtual environment
+# On Windows:
+venv\Scripts\activate
+# On macOS/Linux:
+source venv/bin/activate
+
+# Install the required Python packages
+pip install -r requirements.txt
+
+# Start the Flask server
+python app.py
 
 4. Start the story generator frontend:
 ```bash
-cd story-generator
-# Additional setup instructions to be added
+# Navigate to the story-generator directory
+cd "WORKCOHOL PROJECT/story-generator"
+
+# Install frontend dependencies
+npm install
+
+# Start the development server
+npm start
 ```
 
 ## Development
@@ -68,10 +88,6 @@ Detailed documentation for each component will be added as the project develops.
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Contact
-
-Project Link: [repository-url]
 
 ---
 *Note: This README will be updated as the project evolves with more specific instructions and documentation.*
